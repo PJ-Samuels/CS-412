@@ -1,0 +1,8 @@
+<div [formGroup]="searchForm"> <!-- Bind the FormGroup to the form tag -->
+  <label>Home team</label>
+  <input type="text" formControlName="home" required> <!-- Bind the form control to formControlName -->
+  <label>Away team</label>
+  <input type="text" formControlName="away" required>
+  <button (click)="searchAllGame()">search</button>
+</div>
+

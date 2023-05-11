@@ -1,0 +1,22 @@
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<% if (games) { %>
+    <h1>List of Teams</h1>
+    <ul>
+        <% games.forEach(function(game) { %>
+            <li><%= game.away.name %> vs <%= game.home.name %></li>
+        <% }); %>
+    </ul>
+<% } else { %>
+    <p>No teams found.</p>
+<% } %>
+
+</body>
+</html>
+
+
+

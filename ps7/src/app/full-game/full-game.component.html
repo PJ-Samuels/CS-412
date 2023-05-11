@@ -1,0 +1,18 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <p>Search a NBA or college Basketball Team name here</p>
+</div>
+<!--<div>-->
+<!--  <ul>-->
+<!--    <li *ngFor="let game of games">-->
+<!--      <div *ngIf="game">-->
+<!--        <p>{{game.home.name}} vs {{game.away.name}}</p>-->
+<!--      </div>-->
+<!--    </li>-->
+<!--  </ul>-->
+<!--</div>-->
+<app-search-game (searchedGamesChanged)="searchedGames = $event"></app-search-game>
+<app-game-detail [games] = searchedGames></app-game-detail>
+

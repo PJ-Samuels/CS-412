@@ -1,0 +1,6 @@
+
+<div *ngFor="let game of games">
+  <p>{{ game.home.name }} vs {{ game.away.name }}</p>
+  <img [src]="game.home.logo" alt="Home team logo">
+  <img [src]="game.away.logo" alt="Away team logo">
+</div>
